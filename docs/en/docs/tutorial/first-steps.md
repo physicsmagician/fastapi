@@ -28,7 +28,7 @@ To add these components to your file, follow the steps below:
 {!../../../docs_src/first_steps/tutorial001.py!}
 ```
 
-!!! technical details
+!!! note "Technical Details"
     `FastAPI` is a class that inherits directly from `Starlette`, meaning that you can use all the <a href="https://www.starlette.io/" class="external-link" target="_blank">Starlette</a> functionality with `FastAPI` too.
 
 ---
@@ -51,7 +51,7 @@ A **path operation** (also known as an **endpoint** or **route**) tells your API
 {!../../../docs_src/first_steps/tutorial001.py!}
 ```
 
-!!! info
+!!! info "Vocabulary"
     That `@something` syntax in Python is called a **decorator**. You put it on top of a function like a decorative hat. A **decorator** takes the function below and does something with it.
 
 FastAPI comes with a variety of **HTTP methods**, or **operations**, including:
@@ -81,7 +81,7 @@ The function below will be called by FastAPI whenever it receives a request to t
 {!../../../docs_src/first_steps/tutorial003.py!}
 ```
 
-!!! learn
+!!! info "Learn"
     To learn more about asynchronicity, visit the [Asynchronous code with `async` and `await` page(../async.md#in-a-hurry){.internal-link target=_blank}.
 
 ---
@@ -179,7 +179,7 @@ There are two main types of schemas FastAPI recognizes:
 * **Data schema** - The shape of some data, like JSON content. In this case, it also refers to the JSON attributes and the data types they have.
 * **OpenAPI and JSON schema** - OpenAPI defines an API schema for your API. And that schema includes definitions (or "schemas") of the data sent and received by your API using **JSON Schema**, the standard for JSON data schemas.
 
-!!! technical details
+!!! info "Technical Details"
     The OpenAPI schema is what powers the two interactive documentation systems included. And there are dozens of alternatives, all based on OpenAPI. You could easily add any of those alternatives to your application built with FastAPI. You could also use it to generate code automatically, for clients that communicate with your API. For example, frontend, mobile or IoT applications.
 
 If you're curious about how the raw OpenAPI schema looks like, head to  <a href="http://127.0.0.1:8000/openapi.json" class="external-link" target="_blank">http://127.0.0.1:8000/openapi.json</a>. 
